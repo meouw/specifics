@@ -10,8 +10,7 @@ Example
 
 Say we have a card game and need to set the suit which will be trumps
 
-'''
-<?php
+```php
 
 /**
  * Create a class with constants for each allowable value
@@ -45,5 +44,5 @@ class CardGame
 // Create a game with clubs as trumps
 $game = new CardGame($clubs);
 
-'''
+```
 
