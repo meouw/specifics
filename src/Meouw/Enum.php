@@ -45,7 +45,7 @@ abstract class Enum
 		if (!in_array($value, $constants)) {
 			throw new \UnexpectedValueException("$value is not an allowable value for $class");
 		}
-		$this->key   = $class.'::'.array_search($value, $constants);
+		$this->key   = array_search($value, $constants);
 		$this->value = $value;
 	}
 
