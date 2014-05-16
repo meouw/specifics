@@ -14,32 +14,32 @@ class EnumTest extends \PHPUnit_Framework_TestCase
 
 	public function testConstruct()
 	{
-		$enum = new CardSuits(CardSuits::CLUBS);
+		$enum = new Suit(Suit::CLUBS);
 		$this->assertInstanceOf('Meouw\Enum', $enum);
-		$this->assertInstanceOf('Meouw\Enum\Test\CardSuits', $enum);
+		$this->assertInstanceOf('Meouw\Enum\Test\Suit', $enum);
 	}
 
 	public function testConstruct_InvalidValue_ThrowsException()
 	{
 		$this->setExpectedException('UnexpectedValueException');
-		new CardSuits('bogus');
+		new Suit('bogus');
 	}
 
 	public function testGetValue()
 	{
-		$enum = new CardSuits(CardSuits::CLUBS);
+		$enum = new Suit(Suit::CLUBS);
 		$this->assertEquals('clubs', $enum->getValue());
 	}
 
 	public function testGetKey()
 	{
-		$enum = new CardSuits(CardSuits::CLUBS);
+		$enum = new Suit(Suit::CLUBS);
 		$this->assertEquals('CLUBS', $enum->getKey());
 	}
 
 	public function testGetList_AsStrings()
 	{
-		$list = CardSuits::getList();
+		$list = Suit::getList();
 		$this->assertEquals(
 			$this->list,
 			$list
@@ -48,11 +48,11 @@ class EnumTest extends \PHPUnit_Framework_TestCase
 
 	public function testGetList_AsObjects()
 	{
-		$list = CardSuits::getList(true);
+		$list = Suit::getList(true);
 
 		foreach ($this->list as $key => $value) {
 			$this->assertArrayHasKey($key, $list);
-			$this->assertInstanceOf('Meouw\Enum\Test\CardSuits', $list[$key]);
+			$this->assertInstanceOf('Meouw\Enum\Test\Suit', $list[$key]);
 			$this->assertEquals($value, $list[$key]->getValue());
 		}
 	}
@@ -60,9 +60,9 @@ class EnumTest extends \PHPUnit_Framework_TestCase
 	public function testHas()
 	{
 		foreach ($this->list as $value) {
-			$this->assertTrue(CardSuits::has($value));
+			$this->assertTrue(Suit::has($value));
 		}
-		$this->assertFalse(CardSuits::has('bogus'));
+		$this->assertFalse(Suit::has('bogus'));
 	}
 }
  
