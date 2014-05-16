@@ -1,0 +1,15 @@
+{
+    "name": "meouw/enum",
+    "description": "Base class for creating Enums in PHP",
+    "authors": [
+        {
+            "name": "Clive Calmeyer",
+            "email": "clive@meouw.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Meouw\\": "src"
+        }
+    }
+}
