@@ -1,5 +1,5 @@
 <?php
-namespace Meouw;
+namespace Meouw\Type;
 
 /**
  * Class Enum

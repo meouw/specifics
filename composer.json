@@ -1,6 +1,6 @@
 {
-    "name": "meouw/enum",
-    "description": "Base class for creating Enums in PHP",
+    "name": "meouw/types",
+    "description": "Some useful Types",
     "authors": [
         {
             "name": "Clive Calmeyer",

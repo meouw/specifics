@@ -1,8 +1,9 @@
 <phpunit
         bootstrap="./tests/bootstrap.php">
     <testsuites>
-        <testsuite name="Meouw/Enum">
-            <directory>tests</directory>
+        <testsuite name="Meouw/Type">
+            <directory>tests/Meouw/Type</directory>
+            <exclude>tests/Meouw/Type/Subject</exclude>
         </testsuite>
     </testsuites>
 </phpunit>

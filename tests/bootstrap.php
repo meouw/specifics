@@ -2,4 +2,4 @@
 /** @var \Composer\Autoload\ClassLoader $loader */
 $loader = require_once __DIR__.'/../vendor/autoload.php';
 
-$loader->add('Meouw\\Enum\\Test\\', __DIR__);
+$loader->add('Meouw\\Type\\Subject\\', __DIR__);

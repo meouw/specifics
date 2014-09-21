@@ -1,7 +1,7 @@
 <?php
-namespace Meouw\Enum\Test;
+namespace Meouw\Type\Subject;
 
-use Meouw\Enum;
+use Meouw\Type\Enum;
 
 class Suit extends Enum
 {

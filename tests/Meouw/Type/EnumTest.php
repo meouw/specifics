@@ -1,7 +1,8 @@
 <?php
 
-namespace Meouw\Enum\Test;
+namespace Meouw\Type;
 
+use Meouw\Type\Subject\Suit;
 
 class EnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -15,8 +16,8 @@ class EnumTest extends \PHPUnit_Framework_TestCase
 	public function testConstruct()
 	{
 		$enum = new Suit(Suit::CLUBS);
-		$this->assertInstanceOf('Meouw\Enum', $enum);
-		$this->assertInstanceOf('Meouw\Enum\Test\Suit', $enum);
+		$this->assertInstanceOf('Meouw\Type\Enum', $enum);
+		$this->assertInstanceOf('Meouw\Type\Subject\Suit', $enum);
 	}
 
 	public function testConstruct_InvalidValue_ThrowsException()
@@ -52,7 +53,7 @@ class EnumTest extends \PHPUnit_Framework_TestCase
 
 		foreach ($this->list as $key => $value) {
 			$this->assertArrayHasKey($key, $list);
-			$this->assertInstanceOf('Meouw\Enum\Test\Suit', $list[$key]);
+			$this->assertInstanceOf('Meouw\Type\Subject\Suit', $list[$key]);
 			$this->assertEquals($value, $list[$key]->getValue());
 		}
 	}
