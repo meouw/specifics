@@ -1,4 +1,5 @@
 <?php
+
 namespace Meouw\Type\Subject;
 
 use Meouw\Type\Enum;
