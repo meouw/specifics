@@ -1,3 +1,13 @@
+Types
+=====
+
+Some Types to make life easier
+
+
+
+[![Build Status](https://travis-ci.org/meouw/specifics.svg?branch=master)](https://travis-ci.org/meouw/specifics)
+
+
 Enum
 ====
 
